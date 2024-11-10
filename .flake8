@@ -1,0 +1,9 @@
+[flake8]
+max-line-length = 100
+exclude = apps/*/migrations/*.py
+per-file-ignores =
+    config/settings/__init__.py: F401,F403
+    config/asgi.py: E402
+    config/settings/local.py: F403, F821, F405
+    config/settings/staging.py: F403, F821, F405
+    config/settings/production.py: F403, F821, F405

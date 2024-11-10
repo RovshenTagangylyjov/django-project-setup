@@ -1,0 +1,34 @@
+exclude: ".git|.tox|.mypy_cache|media|.idea"
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v5.0.0
+      hooks:
+          - id: check-yaml
+    - repo: https://github.com/psf/black
+      rev: 24.10.0
+      hooks:
+          - id: black
+    - repo: local
+      hooks:
+          - id: isort
+            name: isort
+            entry: isort
+            language: system
+            types: [python]
+    - repo: https://github.com/pycqa/flake8
+      rev: 7.1.1
+      hooks:
+          - id: flake8
+            additional_dependencies:
+                - flake8-isort==6.1.1
+    - repo: https://github.com/pre-commit/mirrors-mypy
+      rev: v1.13.0
+      hooks:
+          - id: mypy
+    - repo: local
+      hooks:
+          - id: pylint
+            name: pylint
+            entry: pylint --load-plugins pylint_django --django-settings-module=config.settings.local
+            language: system
+            types: [python]

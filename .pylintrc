@@ -1,0 +1,6 @@
+[MASTER]
+ignore-paths=.*/migrations, .*/tests
+ignore-patterns=manage.py
+
+[MESSAGE-CONTROL]
+disable=C0114, C0115, C0116, R0903, R0801, R0901, R0401, R1732
