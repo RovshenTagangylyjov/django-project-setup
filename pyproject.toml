@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "course"
+name = "project"
 version = "0.1.0"
 description = ""
 authors = ["Rovshen Tagangylyjov <rovshentagangylyjov@gmail.com>"]
