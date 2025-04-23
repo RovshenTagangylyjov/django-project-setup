@@ -2,6 +2,7 @@ from rest_framework.routers import SimpleRouter
 
 from api.users.viewsets import UserViewSet
 
-router = SimpleRouter("users", UserViewSet)
+router = SimpleRouter()
+router.register("users", UserViewSet)
 
 urlpatterns = router.urls

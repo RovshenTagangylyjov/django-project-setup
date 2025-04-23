@@ -50,9 +50,6 @@ INSTALLED_APPS = [
     # 3rd party
     "cachalot",
     "rest_framework",
-    "rest_framework.authtoken",
-    "rest_framework_simplejwt",
-    "rest_framework_simplejwt.token_blacklist",
     "corsheaders",
     "drf_spectacular",
     "drf_spectacular_sidecar",
@@ -186,7 +183,6 @@ CORS_ALLOW_CREDENTIALS = True
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
     "DEFAULT_AUTHENTICATION_CLASSES": [
-        "rest_framework.authentication.SessionAuthentication",
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ],
     "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
@@ -291,9 +287,6 @@ UNFOLD = {
         "show_search": False,  # Search in applications and models names
         "show_all_applications": False,  # Dropdown with all applications and models
     },
-    "STYLES": [
-        lambda request: static("css/styles.css"),
-    ],
 }
 
 DBBACKUP_STORAGE = "django.core.files.storage.FileSystemStorage"
