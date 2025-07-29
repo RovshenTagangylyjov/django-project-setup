@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     # 3rd party
     "cachalot",
     "rest_framework",
+    "rest_framework_simplejwt",
     "corsheaders",
     "drf_spectacular",
     "drf_spectacular_sidecar",
