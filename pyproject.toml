@@ -9,21 +9,21 @@ package-mode = false
 [tool.poetry.dependencies]
 python = "^3.13"
 django = "^5.2"
-djangorestframework = "^3.16.0"
-django-cors-headers = "^4.7.0"
-psycopg = {extras = ["binary"], version = "^3.2.6"}
+djangorestframework = "^3.16.1"
+django-cors-headers = "^4.9.0"
+psycopg = {extras = ["binary"], version = "^3.2.10"}
 drf-spectacular = {extras = ["sidecar"], version = "^0.28.0"}
 django-redis = {extras = ["hiredis"], version = "^6.0.0"}
-django-filter = "^25.1"
+django-filter = "^25.2"
 celery = "^5.5.1"
 python-dotenv = "^1.1.0"
 django-celery-results = "^2.6.0"
-django-dbbackup = "^4.2.1"
-django-auditlog = "^3.0.0"
-django-modeltranslation = "^0.19.14"
-django-phonenumber-field = {extras = ["phonenumbers"], version = "^8.1.0"}
+django-dbbackup = "^5.0.0"
+django-auditlog = "^3.3.0"
+django-modeltranslation = "^0.19.17"
+django-phonenumber-field = {extras = ["phonenumbers"], version = "^8.3.0"}
 django-cachalot = "^2.8.0"
-django-unfold = "^0.63.0"
+django-unfold = "^0.67.0"
 pillow = "^11.2.1"
 django-imagekit = "^5.0.0"
 django-celery-email = "^3.0.0"
