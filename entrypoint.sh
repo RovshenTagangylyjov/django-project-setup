@@ -13,4 +13,4 @@ echo "Apply database migrations"
 python manage.py migrate
 
 # Run server
-gunicorn realtorcrm.wsgi:application -c gunicorn.conf.py
+gunicorn config.wsgi:application -c gunicorn.conf.py
